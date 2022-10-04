@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E2E chat</title>
+    <script src="./bundle.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <ul class="feed"></ul>
+      <button class="start-button">CLICK HERE TO START! This will receive the other user's public key</button>
+      <div class="title">Chat</div>
+      <div id="chatRoom" class="chat"></div>
+      <div class="form">
+        <input id="input" class="text-input" type="text">
+        <button class="send" id="button">Send</button>
+      </div>
+        <ul class="info"></ul>
+    </div>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
